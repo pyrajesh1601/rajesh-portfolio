@@ -7,7 +7,7 @@ export function Footer({ onContact, onMenu }) {
       <h2 className="reveal">
         {"Have something in mind?"}
         <br />
-        {"Letâ€™s get to work."}
+        {"Let’s get to work."}
       </h2>
       <button className="pill light" data-contact="" onClick={onContact}>
         {"Start a conversation "}
@@ -46,7 +46,7 @@ export function Footer({ onContact, onMenu }) {
           {"Expertise"}
         </a>
         <a href="Rajesh-Resume.pdf" download>
-          {"RÃ©sumÃ© â†“"}
+          {"Résumé ↓"}
         </a>
       </div>
       <div>
@@ -68,24 +68,24 @@ export function Footer({ onContact, onMenu }) {
           {"Connect"}
         </h3>
         <a href="https://github.com/pyrajesh1601" target="_blank" rel="noopener noreferrer">
-          {"GitHub â†—"}
+          {"GitHub ↗"}
         </a>
         <a href="https://www.linkedin.com/in/k-rajesh16" target="_blank" rel="noopener noreferrer">
-          {"LinkedIn â†—"}
+          {"LinkedIn ↗"}
         </a>
         <a href="mailto:py.rajesh16@gmail.com">
-          {"Email â†—"}
+          {"Email ↗"}
         </a>
       </div>
     </div>
     <div className="legal">
       <span>
-        {"Â© "}
+        {"© "}
         <span>{new Date().getFullYear()}</span>
         {" K Rajesh. Built with intent."}
       </span>
       <a href="#home">
-        {"Back to top â†‘"}
+        {"Back to top ↑"}
       </a>
     </div>
   </div>

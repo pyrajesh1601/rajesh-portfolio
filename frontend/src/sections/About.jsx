@@ -12,7 +12,7 @@ export function About({ onContact, onMenu }) {
         <span className="profile-monogram" aria-hidden="true">
           {"kr"}
           <span>
-            {"â†—"}
+            {"↗"}
           </span>
         </span>
         <span className="profile-location">
@@ -33,12 +33,12 @@ export function About({ onContact, onMenu }) {
         <p>
           {"RCET, Bhilai "}
           <span>
-            {"Â·"}
+            {"·"}
           </span>
           {" B.Tech"}
         </p>
         <small>
-          {"2023â€“Present"}
+          {"2023–Present"}
         </small>
       </div>
       <div className="profile-stack">
@@ -60,31 +60,31 @@ export function About({ onContact, onMenu }) {
   <div className="about-story">
     <Statement />
     <p className="about-detail reveal">
-      {"My projects connect responsive interfaces, secure APIs, and well-organized data. Beyond code, Iâ€™ve coordinated teams and inter-college events with Blaze Esports."}
+      {"My projects connect responsive interfaces, secure APIs, and well-organized data. Beyond code, I’ve coordinated teams and inter-college events with Blaze Esports."}
     </p>
     <div className="about-bottom reveal">
       <div className="about-social-links">
         <a href="https://github.com/pyrajesh1601" target="_blank" rel="noopener noreferrer">
           {"GitHub "}
           <span>
-            {"â†—"}
+            {"↗"}
           </span>
         </a>
         <a href="https://www.linkedin.com/in/k-rajesh16" target="_blank" rel="noopener noreferrer">
           {"LinkedIn "}
           <span>
-            {"â†—"}
+            {"↗"}
           </span>
         </a>
         <a href="mailto:py.rajesh16@gmail.com">
           {"Email "}
           <span>
-            {"â†—"}
+            {"↗"}
           </span>
         </a>
       </div>
       <a className="pill outline" href="Rajesh-Resume.pdf" download>
-        {"RÃ©sumÃ© â†“"}
+        {"Résumé ↓"}
       </a>
     </div>
   </div>

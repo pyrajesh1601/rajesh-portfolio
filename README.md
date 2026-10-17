@@ -2,7 +2,7 @@
 
 The local migration uses React 19 + Vite, Java 21 + Spring Boot 3.5, Maven, and Google Gemini. It preserves the existing design, portraits, smooth scrolling, loader, carousel, contact modal and assistant. No database is needed.
 
-The existing hosted Sites version remains on its original Worker backend. This migration is local-only until a Java-capable host is selected.
+The React + Spring Boot version is deployed on Render at **https://rajesh-portfolio-bxmf.onrender.com**. The previous hosted Sites version remains independent on its original Worker backend. See [the deployment walkthrough](docs/DEPLOYMENT.md) for the service settings and future updates.
 
 ## Run in VS Code
 
@@ -60,6 +60,6 @@ The Java app accepts `BACKEND_PORT` or the host's `PORT`. It does not load `.env
 
 `legacy/` retains the previously deployed plain-JavaScript version. Its source assets live in `legacy/public/`, its Worker logic in `legacy/server/`, and its tooling in `legacy/scripts/`. `npm run dev:legacy` previews it; `npm run build:legacy` generates the ignored `dist/` deployment bundle. Changes under `frontend/` or `backend/` do not alter the current hosted site. The `.openai/hosting.json` identity and hosted access policy are preserved.
 
-Once Java hosting is available, the packaged JAR can serve the whole site, or a frontend host can proxy `/api` to the Java service. An ordinary Spring Boot JAR cannot run inside the existing JavaScript Worker runtime.
+Render builds the Dockerfile and runs the packaged JAR to serve the whole site. An ordinary Spring Boot JAR cannot run inside the previous JavaScript Worker runtime.
 
 The Java per-process rate limiter is a best-effort safeguard, not a distributed spending cap. Use provider quota/billing controls for broad public access.

@@ -7,7 +7,7 @@ export function Hero({ onContact, onMenu }) {
   <LiquidPortrait />
   <div className="vignette"></div>
   <span className="art-credit">
-    {"Move your cursor Â· Reveal the signal"}
+    {"Move your cursor · Reveal the signal"}
   </span>
   <div className="watermark intro-element" style={{"--delay": "300ms"}}>
     {"RAJESH"}
@@ -35,17 +35,17 @@ export function Hero({ onContact, onMenu }) {
         </span>
       </h1>
       <p className="hero-description intro-element" style={{"--delay": "450ms"}}>
-        {"Iâ€™m Rajesh. I connect thoughtful interfaces with secure, well-structured backends â€” turning complex requirements into useful software."}
+        {"I’m Rajesh. I connect thoughtful interfaces with secure, well-structured backends — turning complex requirements into useful software."}
       </p>
       <div className="hero-proof intro-element" style={{"--delay": "650ms"}}>
         <svg>
           <use href="#spark" />
         </svg>
-        {" Java Â· Spring Boot Â· Node.js Â· React"}
+        {" Java · Spring Boot · Node.js · React"}
       </div>
       <div className="hero-actions intro-element" style={{"--delay": "750ms"}}>
         <button className="pill" data-contact="" onClick={onContact}>
-          {"Letâ€™s Talk "}
+          {"Let’s Talk "}
           <span className="arrow">
             <svg>
               <use href="#up" />
@@ -97,13 +97,13 @@ export function Hero({ onContact, onMenu }) {
   </div>
   <div className="shell hero-status intro-element" style={{"--delay": "900ms"}}>
     <span>
-      {"B.Tech CSE Â· RCET, Bhilai"}
+      {"B.Tech CSE · RCET, Bhilai"}
     </span>
     <span>
       {"Based in India"}
     </span>
     <a href="#about">
-      {"Scroll to explore â†“"}
+      {"Scroll to explore ↓"}
     </a>
   </div>
 </section>

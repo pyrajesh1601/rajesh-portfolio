@@ -34,7 +34,7 @@ export function Header({ onContact, onMenu }) {
         </span>
         <LiveClock />
         <span>
-          {"â€¢"}
+          {"•"}
         </span>
         <LiveClock date />
       </div>

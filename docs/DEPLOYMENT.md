@@ -2,6 +2,12 @@
 
 The deployment target is one free Render Docker web service. The same Java process serves the built React site and `/api/chat`, so the browser uses one HTTPS origin and there is no separate frontend hosting bill or cross-origin API URL to manage. Your previous Sites deployment is independent.
 
+## Current service
+
+The service was created through the connected Render integration in **My Workspace**, using the free plan and Singapore region. Its assigned URL is https://rajesh-portfolio-bxmf.onrender.com and dashboard is https://dashboard.render.com/web/srv-db9kcvdg1s2s7391tvag.
+
+The integration supports automatic deployment on each commit, but does not expose the Blueprint's `checksPass` or custom health-check settings. Therefore the current service deploys on commits and uses Render's default startup detection. Each Docker build still runs the Java tests before packaging. In the dashboard, set **Auto-Deploy → After CI Checks Pass** and **Health Check Path → `/api/health`** to adopt the stricter settings described below. The Blueprint file is a reproducible setup option; creating a service through the integration does not automatically apply that file. Do not create a duplicate service if the current one already exists.
+
 ## 1. Accounts and source control
 
 Create a Render account at https://dashboard.render.com/register and complete verification and terms yourself. Connect GitHub and grant repository access to `pyrajesh1601/rajesh-portfolio` when requested. GitHub stores the code; Render obtains a copy to build and run it. Keep access limited to the required repository when the authorization screen offers that choice.
@@ -90,7 +96,7 @@ git commit -m "Describe the change"
 git push origin main
 ```
 
-GitHub Actions tests the code and builds the Docker image. With “After CI checks pass” enabled, Render builds and deploys the new commit after checks succeed. Watch both GitHub Actions and Render's deployment logs. Do not assume that a successful push means deployment has finished.
+GitHub Actions tests the code, builds the Docker image, and starts it without a key to check health, frontend assets, API validation, and the configured HTTPS origin. The current service starts a deployment on each pushed commit. If you enable “After CI checks pass” in the dashboard, Render waits for those checks before deploying. Watch both GitHub Actions and Render's deployment logs. Do not assume that a successful push means deployment has finished.
 
 Changing `profile.json`, instructions, frontend content, or the PDF requires a new build. Changing a private key is done in Render's environment settings and requires a restart/redeploy. A direct Java launch does not read your laptop's `.env.local`.
 

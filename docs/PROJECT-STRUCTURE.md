@@ -31,6 +31,9 @@ rajesh-portfolio/
 ├── legacy/                     # Previous JavaScript site, isolated for maintenance
 ├── .github/workflows/          # Build and test automation
 ├── .env.example                # Safe configuration template
+├── .dockerignore               # Excludes secrets and unnecessary Docker inputs
+├── Dockerfile                  # Build React, package Java, run the application
+├── render.yaml                 # Reproducible Render service configuration
 ├── package.json
 └── package-lock.json
 ```
@@ -54,3 +57,5 @@ The active application reads facts from `backend/src/main/resources/profile.json
 | `npm run build:legacy` | Generate the old Worker deployment bundle |
 
 Automated tests use a local fake provider and do not require an API key. The smoke command calls Gemini and requires the server to have a valid key.
+
+See [the deployment guide](DEPLOYMENT.md) for the current Render service, configuration, verification, and update process.
