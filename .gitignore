@@ -1,7 +1,16 @@
 
-.env.local
 .env
-.env.*.local
-dist/server/
-dist/.openai/
+.env.*
+!.env.example
+dist/
+legacy/public/server/
+legacy/public/.openai/
 node_modules/
+build/
+backend/target/
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.log
+.DS_Store
+Thumbs.db

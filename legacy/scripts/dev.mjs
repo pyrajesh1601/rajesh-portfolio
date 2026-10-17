@@ -4,9 +4,9 @@ import { resolve, sep, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { handleChat, jsonResponse } from '../server/chat.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url));
+const root = fileURLToPath(new URL('../../', import.meta.url));
 try { process.loadEnvFile(resolve(root, '.env.local')); } catch (error) { if (error.code !== 'ENOENT') throw new Error('Unable to load .env.local'); }
-const publicRoot = resolve(root, 'dist');
+const publicRoot = resolve(root, 'legacy/public');
 const mime = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.png': 'image/png', '.pdf': 'application/pdf' };
 const port = Number(process.env.PORT || 5500);
 const server = createServer(async (incoming, outgoing) => {

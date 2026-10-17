@@ -3,7 +3,7 @@ import { fileURLToPath } from 'node:url';
 import { resolve } from 'node:path';
 import { PROFILE } from '../server/profile.mjs';
 
-const root = fileURLToPath(new URL('../', import.meta.url));
+const root = fileURLToPath(new URL('../../', import.meta.url));
 const manifest = JSON.parse(await readFile(resolve(root, '.openai/hosting.json'), 'utf8'));
 if (manifest.static) throw new Error('Remove static configuration for the server build.');
 const files = {
@@ -15,8 +15,8 @@ const files = {
   '/Rajesh-Resume.pdf': 'application/pdf'
 };
 const assets = {};
-for (const [path, type] of Object.entries(files)) assets[path] = { type, data: (await readFile(resolve(root, 'dist', '.' + path))).toString('base64') };
-const chat = (await readFile(resolve(root, 'server/chat.mjs'), 'utf8')).replace("import { PROFILE } from './profile.mjs';", '');
+for (const [path, type] of Object.entries(files)) assets[path] = { type, data: (await readFile(resolve(root, 'legacy/public', '.' + path))).toString('base64') };
+const chat = (await readFile(resolve(root, 'legacy/server/chat.mjs'), 'utf8')).replace("import { PROFILE } from './profile.mjs';", '');
 const worker = `\nexport default { async fetch(request, env) {
   const url = new URL(request.url);
   if (url.pathname === '/api/chat') return handleChat(request, env);

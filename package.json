@@ -3,10 +3,28 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev.mjs",
-    "start": "node scripts/dev.mjs",
-    "build": "node scripts/build.mjs",
-    "test": "node --test tests/chat.test.mjs"
+    "dev": "node scripts/dev-fullstack.mjs",
+    "dev:frontend": "vite --config frontend/vite.config.js",
+    "dev:legacy": "node legacy/scripts/dev.mjs",
+    "start": "node scripts/start-java.mjs",
+    "build:frontend": "vite build --config frontend/vite.config.js",
+    "build": "npm run build:frontend && mvn -f backend/pom.xml package",
+    "build:legacy": "node legacy/scripts/build.mjs",
+    "test": "npm run test:legacy && npm run test:backend",
+    "test:legacy": "node --test legacy/tests/chat.test.mjs",
+    "test:backend": "mvn -f backend/pom.xml test",
+    "smoke": "node scripts/smoke-spring.mjs"
   },
-  "engines": { "node": ">=22" }
+  "dependencies": {
+    "lenis": "1.3.23",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "^7.1.0"
+  },
+  "engines": {
+    "node": ">=22.12"
+  }
 }
