@@ -1,0 +1,7 @@
+
+.env.local
+.env
+.env.*.local
+dist/server/
+dist/.openai/
+node_modules/

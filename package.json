@@ -1,0 +1,12 @@
+{
+  "name": "rajesh-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/chat.test.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

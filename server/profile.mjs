@@ -1,0 +1,32 @@
+// Edit this verified knowledge base when Rajesh supplies new information.
+export const PROFILE = {
+  name: 'K Rajesh',
+  summary: 'Computer Science and Engineering student and full stack developer with hands-on project experience in Java, Spring Boot, Node.js, Express, React, PostgreSQL, and MongoDB. Interested in secure, scalable, production-ready applications.',
+  education: { degree: 'Bachelor of Technology, Computer Science & Engineering', college: 'Rungta College of Engineering and Technology (RCET), Bhilai', university: 'CSVTU', period: '2023–Present, as listed in the supplied resume', cgpa: '8.04' },
+  skills: {
+    languages: ['Java', 'JavaScript', 'SQL'],
+    frontend: ['React.js', 'Tailwind CSS'],
+    backend: ['Spring Boot', 'Spring Security', 'Spring Data JPA', 'Node.js', 'Express.js', 'Hibernate', 'REST APIs', 'JWT Authentication'],
+    databases: ['PostgreSQL', 'MongoDB'],
+    tools: ['Git', 'GitHub', 'Docker', 'Docker Compose', 'Maven', 'Postman', 'Swagger / OpenAPI', 'Lombok'],
+    concepts: ['OOP', 'Data Structures & Algorithms', 'DBMS', 'RESTful API Design'],
+    interpersonal: ['Communication', 'Leadership', 'Public Speaking', 'Team Collaboration', 'Problem Solving', 'Adaptability']
+  },
+  projects: [
+    { name: 'DevFlow', type: 'Full stack project and issue management platform', stack: ['React.js', 'Node.js', 'Express.js', 'PostgreSQL'], details: 'Organizes projects, tasks, team members, and development workflows. JWT authentication, role-based authorization, RESTful project and issue APIs, middleware authentication and validation, responsive dashboard, project tracking, issue statuses, filtering, API-driven updates, modular architecture.' },
+    { name: 'FinLedger', type: 'Financial transaction management backend', stack: ['Node.js', 'Express.js', 'MongoDB', 'JWT', 'Nodemailer'], details: 'Banking ledger backend for user accounts, financial transactions, income, expenses, and history. Protected REST APIs, role-based authorization, CRUD for financial records, email notifications, modular architecture. No evidence of commercial banking integrations or real-money processing.' },
+    { name: 'Fitforge', type: 'Fitness backend', stack: ['Java', 'Spring Boot', 'Spring Security', 'Spring Data JPA', 'PostgreSQL', 'Docker'], details: 'User authentication and workout management through REST APIs. JWT authentication, role-based authorization, layered architecture, maintainable code and Docker deployment.' }
+  ],
+  certifications: [
+    { name: 'MERN Full Stack Web Development Certification (Intermediate)', issuer: 'Coding Spoon', topics: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'REST APIs'] },
+    { name: 'Artificial Intelligence Machine Learning (AIML)', issuer: 'Kodezen Technologies Pvt. Ltd.', topics: ['Python', 'Machine Learning', 'Deep Learning'] }
+  ],
+  leadership: [
+    { role: 'Operational Lead, Blaze Esports', details: 'Startup incubated at RuBI (Rungta Business Incubator), Bhilai. Organized 7+ inter-college esports events. Managed logistics, budget planning, and resource coordination.' },
+    { role: 'Student Ambassador, Institution’s Innovation Council (IIC)', period: 'Jan 2025–Nov 2025', details: 'Represented the technical student community; supported innovation, entrepreneurship and campus technical initiatives; bridge between students and administration.' },
+    { role: 'Core Member, Event Organisation & Management Team', details: 'Planning, crowd flow control, and execution strategy for major departmental and institutional activities.' }
+  ],
+  contact: { email: 'py.rajesh16@gmail.com', github: 'https://github.com/pyrajesh1601', linkedin: 'https://www.linkedin.com/in/k-rajesh16', resume: '/Rajesh-Resume.pdf', location: 'Based in India; college in Bhilai' },
+  sources: ['User-supplied resume KRAJESH_RESUME_0001.pdf', 'Portfolio content approved by Rajesh'],
+  unknown: ['Age', 'Birth date', 'Home address', 'Personal or family details', 'Salary', 'Notice period', 'Hiring availability', 'Employment and internship history', 'Graduation date', 'Years of professional experience', 'Project-specific repository URLs', 'Live project demo URLs', 'Performance metrics', 'Clients or testimonials']
+};
