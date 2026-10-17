@@ -1,0 +1,15 @@
+# Noir portrait revision
+
+Created with the built-in image generation tool. Versioned assets retain the previous pair.
+
+## Noir portrait
+
+Use case: identity-preserve / editorial style-transfer. Redesign the attached man's portrait for his professional developer portfolio. Reference 1 is the previous generated portrait: preserve recognizable facial structure, exact left-looking three-quarter orientation and swept hair, moustache, and ear stud. Reference 2 is his original photo for faithful identity. Replace awkward bare sculptural bust completely with a natural fully clothed upper body wearing a beautifully tailored minimalist BLACK high-collar jacket, realistic relaxed shoulders continuing OUT OF THE LOWER FRAME, no stone base, no chopped shoulder slab, no pedestal, no bare chest. Creative direction: premium cinematic graphite editorial portrait, near-black charcoal background #151618, face with strong dimensional chiaroscuro light and restrained silver rim light; skin and hair monochrome natural photographic texture rather than craggy sculpture. Large head and upper torso on RIGHT half, head centered around x=68%, full crown visible with 7% top breathing room, shoulders gently dissolve into black at bottom, left 42% quiet negative space dark charcoal for white headline. Wide 16:9 image. Refined, ambitious, sophisticated, realistic recognizable individual, subtle film grain, no text, no code, no props, no extra people. Deep blacks and precise highlights, avoid flat gray wash and overexposure. Face remains readable, no extreme armor or costume.
+
+Saved: `dist/assets/rajesh-noir-v2.png`
+
+## Signal reveal
+
+Use case: precise-object-edit / identity-preserve. The attached finished monochrome cinematic portrait is the EXACT base for an aligned cursor reveal on a personal developer website. Keep canvas dimensions and aspect ratio, camera, crop, entire silhouette, face geometry and identity, hair position, eye gaze, ear stud, black high-collar jacket, natural shoulder contours, and dark background EXACTLY UNCHANGED. Make a creative 'signal beneath the surface' alternate treatment: keep most of the face a realistic dark graphite portrait with natural skin texture, introduce a very fine elegant warm COPPER TOPOGRAPHIC / CONTOUR-LINE lattice which follows the facial planes, temple, cheekbone and neck, and subtle warm amber rim illumination along the right profile and jacket seams. The network is fine crafted inlaid copper filaments, not cracked lava, not circuits with text, not thick polygon armor; sparse flowing fine lines catch light along surface geometry, luxurious engineering aesthetic. Restrained warm #cf8047 reflections and a few small glints, deep black shadows. Hair stays dark and photographic with gentle copper rim. Background remains near-black charcoal exactly as base and jacket stays black. Refined editorial art with an intelligent sculptural line overlay, NOT fully orange metallic skin, NOT golden statue, NO fragmented chunks, NO bare shoulders, NO extra objects, NO text. Exact pixel alignment paramount; change only the material/lighting treatment.
+
+Saved: `dist/assets/rajesh-signal-v2.png`
