@@ -24,3 +24,14 @@ jobs:
       - run: npm ci
       - run: npm run test:legacy
       - run: npm run build
+      - name: Verify deployable Docker image
+        run: docker build --tag rajesh-portfolio:ci .
+      - name: Start container without secrets
+        run: docker run --detach --name portfolio-ci --publish 127.0.0.1:10000:10000 --env SPRING_PROFILES_ACTIVE=render --env PORT=10000 --env RENDER_EXTERNAL_URL=https://portfolio.example rajesh-portfolio:ci
+      - name: Verify running container
+        run: node scripts/smoke-container.mjs
+      - name: Container diagnostics and cleanup
+        if: always()
+        run: |
+          docker logs portfolio-ci 2>/dev/null || true
+          docker rm --force portfolio-ci 2>/dev/null || true

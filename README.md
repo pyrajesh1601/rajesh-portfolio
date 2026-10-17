@@ -38,6 +38,8 @@ The assistant identifies itself as AI, not Rajesh. It is instructed to use only 
 
 ## Test and build
 
+For Render setup, the Docker build, verification, future updates, and troubleshooting, follow [the deployment walkthrough](docs/DEPLOYMENT.md).
+
 ```powershell
 npm test
 npm run build
